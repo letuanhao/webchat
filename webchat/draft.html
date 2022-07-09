@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body{
+          padding: 0;
+          margin: 0;
+      }
+        .d-flex{
+            display: flex;
+        }
+        .grow-1{
+            flex-grow: 1;
+        }
+        .item{
+            background-color: pink;
+            border: 1px solid green;
+        }
+        .column{
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 100vh;" class="d-flex">
+        <div class="item" style="width: 200px;">Conversation List</div>
+        <div class="item grow-1 d-flex column">
+            <div class="item">title</div>
+            <div class="item grow-1 d-flex">
+                    <div class="item grow-1 d-flex column">
+                        <div class="item grow-1">Message</div>
+                        <div class="item">Composer</div>
+                    </div>
+                    <div class="item" style="width: 200px;">Info</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
